@@ -216,12 +216,12 @@
                             <?php } ?>
                         </div>
                         <?php } ?>
-                        $ <?php if ( ! isset($_SESSION['logged_in'])) { ?>Password:
-                        <input type="password" name="command" id="command" />
-                        <?php } else { ?>
+                        $ <?php /*if ( ! isset($_SESSION['logged_in'])) {*/ ?><!-- Password:
+                        <input type="password" name="command" id="command" /> !-->
+                        <?php /*} else {*/ ?>
                         <input type="text" name="command" id="command" autocomplete="off" onkeydown="return command_keyed_down(event);" />
                         <!-- <input type="button" value="Persist" onfocus="this.style.color='#0000FF';" onblur="this.style.color='';" onclick="toggle_persist_command(<?php if (isset($_SESSION['commands'])) { echo count($_SESSION['commands']); } else { echo 0; } ?>);" class="persist_button" /> !--> 
-                        <?php } ?>
+                        <?php /*}*/ ?>
                     </form>
                 </div>
             </div>
